@@ -5,16 +5,18 @@
     <title>Мой Task Tracker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <h2>Список задач</h2>
-    <input type="text" id="taskTitle" placeholder="Новая задача...">
-    <button onclick="addTask()">Добавить</button>
-    <select id="status-task" name="status-task" onchange="loadTasks()">
-        <option value="">Все задачи</option>
-        <option value="false">Не выполнено</option>
-        <option value="true">Выполнено</option>
-    </select>
-    <ul id="taskList"></ul>
+<body class="page">
+    <h2 class="main-title">Список задач</h2>
+    <input type="text" id="taskTitle" placeholder="Новая задача..." class="tasks-input">
+    <div class="buttons-row">
+        <button onclick="addTask()" class="add-button">Добавить</button>
+        <select id="status-task" name="status-task" onchange="loadTasks()" class="select-status">
+            <option value="">Все задачи</option>
+            <option value="false">Не выполнено</option>
+            <option value="true">Выполнено</option>
+        </select>
+    </div>
+    <ul id="taskList" class="tasks-list"></ul>
 
     <script src="script.js"></script>
 </body>

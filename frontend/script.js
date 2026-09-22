@@ -8,7 +8,7 @@ async function loadTasks() {
     const list = document.getElementById("taskList")
     list.innerHTML = ""
     tasks.forEach(task => {
-        list.innerHTML += `<li>${task.title}<button onclick="updateTaskStatus(${task.id})">${task.completed ? "Выполнено" : "Не выполнено"}</button><button onclick="deleteTask(${task.id})">❌</button></li>`
+        list.innerHTML += `<li>${task.title}<button onclick="updateTaskStatus(${task.id})">${task.completed ? "Выполнено" : "Не выполнено"}</button><button onclick="deleteTask(${task.id})" class="del-button"></button></li>`
     });
 }
 
