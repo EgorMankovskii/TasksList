@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой Task Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Список задач</h2>
+    <input type="text" id="taskTitle" placeholder="Новая задача...">
+    <button onclick="addTask()">Добавить</button>
+    <select id="status-task" name="status-task" onchange="loadTasks()">
+        <option value="">Все задачи</option>
+        <option value="false">Не выполнено</option>
+        <option value="true">Выполнено</option>
+    </select>
+    <ul id="taskList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
